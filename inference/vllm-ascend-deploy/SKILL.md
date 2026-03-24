@@ -35,7 +35,7 @@
 ### 基本用法
 
 ```bash
-cd /home/y30015289/vllm-ascend-deploy/scripts
+cd /home/vllm-ascend-deploy/scripts
 bash deploy_vllm.sh --model-path /path/to/model
 ```
 
@@ -64,7 +64,7 @@ bash deploy_vllm.sh \
 ### 示例1：部署Qwen3-0.6B模型
 
 ```bash
-bash deploy_vllm.sh --model-path /home/y30015289/qwen3-0.6b
+bash deploy_vllm.sh --model-path /home/qwen3-0.6b
 ```
 
 **执行流程**：
@@ -79,7 +79,7 @@ bash deploy_vllm.sh --model-path /home/y30015289/qwen3-0.6b
 
 ```bash
 bash deploy_vllm.sh \
-  --model-path /home/y30015289/qwen3-0.6b \
+  --model-path /home/qwen3-0.6b \
   --container-name vllm-qwen3 \
   --port 8001
 ```
@@ -88,7 +88,7 @@ bash deploy_vllm.sh \
 
 ```bash
 bash deploy_vllm.sh \
-  --model-path /home/y30015289/qwen3-0.6b \
+  --model-path /home/qwen3-0.6b \
   --devices 7
 ```
 
@@ -176,7 +176,7 @@ curl http://localhost:8000/v1/models
 curl http://localhost:8000/v1/completions \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "/home/y30015289/qwen3-0.6b",
+    "model": "/home/qwen3-0.6b",
     "prompt": "Hello, how are you?",
     "max_tokens": 50
   }'

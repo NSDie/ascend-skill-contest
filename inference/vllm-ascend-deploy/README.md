@@ -39,14 +39,14 @@ bash vllm-ascend-deploy/scripts/deploy_vllm.sh --model-path /path/to/model
 
 ```bash
 bash vllm-ascend-deploy/scripts/deploy_vllm.sh \
-    --model-path /home/y30015289/Qwen3-0.6B/
+    --model-path /home/Qwen3-0.6B/
 ```
 
 ### 自定义配置
 
 ```bash
 bash vllm-ascend-deploy/scripts/deploy_vllm.sh \
-    --model-path /home/y30015289/Qwen3-0.6B/ \
+    --model-path /home/Qwen3-0.6B/ \
     --container-name vllm-qwen3 \
     --port 8001
 ```
@@ -55,7 +55,7 @@ bash vllm-ascend-deploy/scripts/deploy_vllm.sh \
 
 ```bash
 bash vllm-ascend-deploy/scripts/deploy_vllm.sh \
-    --model-path /home/y30015289/Qwen3-0.6B/ \
+    --model-path /home/Qwen3-0.6B/ \
     --devices 7
 ```
 
@@ -83,7 +83,7 @@ curl http://localhost:8000/v1/models
 curl http://localhost:8000/v1/completions \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "/home/y30015289/Qwen3-0.6B/",
+    "model": "/home/Qwen3-0.6B/",
     "prompt": "Hello, how are you?",
     "max_tokens": 50
   }'
