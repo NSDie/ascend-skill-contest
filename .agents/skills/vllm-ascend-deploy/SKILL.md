@@ -1,3 +1,7 @@
+---
+name: vllm-ascend-deploy
+description: 使用vLLM框架在昇腾NPU服务器上部署Qwen3-0.6B模型
+---
 # vLLM-Ascend Deployment Skill
 
 ## 概述
